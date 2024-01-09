@@ -115,3 +115,14 @@ img{
     }
  }
 /* Contenido Principal */
+
+/* Footer */
+.footer{
+    display: flex;
+    background-color: var(--primario);
+    margin-top: 5rem;
+    justify-content: center;
+}
+.footer__enlace a{
+    color: var(--blanco);
+}
