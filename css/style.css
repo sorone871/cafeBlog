@@ -179,6 +179,53 @@ img{
  /* Entradas */
 /* Contenido Principal */
 
+
+/* Nosotros */
+@media (min-width:768px ) {
+    /*.sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+    }
+    .sobre-nosotros__texto,
+    .nosotros__imagen{
+        flex-basis: 50%;
+    }*/
+     .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        column-gap: 2rem;
+    } 
+ }
+/* Nosotros */
+
+/* Cursos */
+.curso{
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--gris);
+}
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+ }
+ .curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+ }
+ .curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+ }
+ .curso__info{
+    font-weight: normal;
+ }
+ .curso__label,
+ .curso__info{
+    font-size: 2rem;
+ }
+/* Cursos */
 /* Footer */
 .footer{
     display: flex;
